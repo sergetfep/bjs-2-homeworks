@@ -50,7 +50,8 @@ function averageEvenElementsWorker(...arr) {
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 === 0) {
-      (sumEvenElement += arr[i]), countEvenElement++;
+      sumEvenElement += arr[i];
+      countEvenElement++;
     }
   }
   return sumEvenElement / countEvenElement;
